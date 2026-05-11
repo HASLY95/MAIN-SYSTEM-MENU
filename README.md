@@ -6,7 +6,7 @@ The ultimate Python system suite for New Users: Monitor, Manage, and Log with ea
 # PASSWORD : 1234
 # <<
 
-LICENSE : GPL
+# LICENSE : GPL (General Public License v3.0)
 
 NOW YOU ARE IN THE  "HOW TO INSTALL extension to RUN THE MAIN SYSTEM MENU"
 
