@@ -1,9 +1,9 @@
 # MAIN SYSTEM RELEASE 2.1 MADE BY HASLY LICENSE GPL
 # status : SUPPORT UNTIL MAY 5 2027
 
-NEWS = "The Main system Menu Beta v.0.1 is out now for open source!! \n BETA 0.4 update What's new? \n BETA 0.4 add the TXT and.. We called it [WRITE txt] \n BETA 0.7 delete the [ area and cercumference of circle ] option from he menu 2. After it's here in the menu2 and BETA 0.6 just 5 days. \n This product is will End of live in [May 5 2027] \n update and support >> \n github Sep 5 2026 \n github Oct 5 2026 \n github Dec 26 2026 \n github Feb 28 2027 \n github May 1 2027"
+NEWS ="The Main system Menu Beta v.0.1 is out now for open source!! \n BETA 0.4 update What's new? \n BETA 0.4 add the TXT and.. We called it [WRITE txt] \n BETA 0.7 delete the [ area and cercumference of circle ] option from he menu 2. After it's here in the menu2 and BETA 0.6 just 5 days. \n This product is will End of live in [May 5 2027] \n update and support >> \n github Sep 5 2026 \n github Oct 5 2026 \n github Dec 26 2026 \n github Feb 28 2027 \n github May 1 2027"
 
-Version = "RELEASE : 2.1"
+Version = "RELEASE : 2.2.1"
 LICENSE = "LICENSE : GPL"
 
 R = 4
@@ -32,6 +32,20 @@ def save_log(user_name, status):
     with open("logs/login_history.txt", "a") as file:
         current_time = time.ctime()
         file.write(f"[{current_time}] User: {user_name} | status: {status}\n")
+
+while True:
+    print("\n " * 50)
+    print("//====================================--")
+    print("||   MAIN SYSTEM MENU MAIN OPTION..   =")
+    print("//====================================---..")
+    print("LOGIN [1]")
+    print("EXIT NOW [E]")
+    mmo = input("SELECT >>  ")
+
+    if mmo == "1":
+        break
+    else:
+        exit()
 
 while R > 0:
 
@@ -166,7 +180,7 @@ def wwork(wwwftxtW):
 while True:
     print("\n " * 50)
     print(" ====================================")
-    print("=- MAIN SYSTEM FOR RHEL[RELEASE v.2.1] -=")
+    print(f"=- MAIN SYSTEM FOR RHEL[{Version}] -=")
     print(" ====================================")
     print("1. check_system")
     print("2. calculator")
