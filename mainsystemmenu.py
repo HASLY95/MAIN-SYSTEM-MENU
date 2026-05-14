@@ -74,7 +74,7 @@ while R > 0:
         save_log(name, "SUCCESS")
         break
 
-print("WELCOME BACK HASLY")
+print(f"WELCOME BACK {username}")
 
 def check_system():
     c = psutil.cpu_percent(interval=1)
