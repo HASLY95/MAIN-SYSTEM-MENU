@@ -1,7 +1,7 @@
 # MAIN SYSTEM RELEASE 2.1 MADE BY HASLY LICENSE GPL
 # status : SUPPORT UNTIL MAY 5 2027
 
-NEWS ="The Main system Menu Beta v.0.1 is out now for open source!! \n BETA 0.4 update What's new? \n BETA 0.4 add the TXT and.. We called it [WRITE txt] \n BETA 0.7 delete the [ area and cercumference of circle ] option from he menu 2. After it's here in the menu2 and BETA 0.6 just 5 days. \n This product is will End of live in [May 5 2027] \n update and support >> \n github Sep 5 2026 \n github Oct 5 2026 \n github Dec 26 2026 \n github Feb 28 2027 \n github May 1 2027"
+NEWS ="The Main system Menu Beta v.0.1 is out now for open source!! \n BETA 0.4 update What's new? \n BETA 0.4 add the TXT and.. We called it [WRITE txt] \n BETA 0.7 delete the [ area and cercumference of circle ] option from menu 2. After it's here in the menu2 and BETA 0.6 just 5 days. \n This product is will End of live in [May 5 2027] \n update and support >> \n github Sep 5 2026 \n github Oct 5 2026 \n github Dec 26 2026 \n github Feb 28 2027 \n github May 1 2027"
 
 Version = "RELEASE : 2.2.1"
 LICENSE = "LICENSE : GPL"
@@ -52,13 +52,13 @@ while R > 0:
     name = input("NAME : ")
     password = getpass.getpass("PASSWORD : ")
 
-    def incorrent():
-        print("Name or Password is incorrent try again")
+    def incorrect():
+        print("Name or Password is incorrect try again")
 
     if name != username:
-        incorrent()
+        incorrect()
     elif password != paswod:
-        incorrent()
+        incorrect()
         time.sleep(5)
         R -= 1
         if R == 0:
