@@ -217,7 +217,7 @@ while True:
 
     elif cho == "3":
         v()
-        lk = "https://github.com/HASLY95"
+        lk = "https://github.com/HASLY95/PTMENU"
         link(lk)
         while True:
             print("BACK TO MENU")
