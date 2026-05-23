@@ -105,7 +105,7 @@ def check_system():
             print("\n")
 
 def usedcclt(user_name, status):
-    with open("logs/MAIN_SYSTEM-history.txt", "a") as file:
+    with open("logs/PTMENU-logs.txt", "a") as file:
         current_time = time.ctime()
         file.write(f"[{current_time}] User: {user_name} | {status}\n")
 
