@@ -1,7 +1,7 @@
 # MAIN SYSTEM RELEASE 2.1 MADE BY HASLY LICENSE GPL
 # status : SUPPORT UNTIL MAY 5 2027
 
-NEWS ="The Main system Menu Beta v.0.1 is out now for open source!! \n BETA 0.4 update What's new? \n BETA 0.4 add the TXT and.. We called it [WRITE txt] \n BETA 0.7 delete the [ area and cercumference of circle ] option from menu 2. After it's here in the menu2 and BETA 0.6 just 5 days. \n This product is will End of live in [May 5 2027] \n update and support >> \n github Sep 5 2026 \n github Oct 5 2026 \n github Dec 26 2026 \n github Feb 28 2027 \n github May 1 2027"
+NEWS ="The Main system Menu Beta v.0.1 is out now for open source!! \n BETA 0.4 update What's new? \n BETA 0.4 add the TXT and.. We called it [WRITE txt] \n BETA 0.7 delete the [ area and circumference of circle ] option from menu 2. After it's here in the menu2 and BETA 0.6 just 5 days. \n This product will reach End of Life on [May 5 2027] \n BIG update and support >> \n github Sep 5 2026 \n github Oct 5 2026 \n github Dec 26 2026 \n github Feb 28 2027 \n github May 1 2027"
 
 Version = "RELEASE : 2.2.1"
 LICENSE = "LICENSE : GPL"
@@ -26,7 +26,7 @@ def link(url):
     webbrowser.open(url)
     print("TIME FOR UPDATE!")
 
-name = "Unknow-User"
+name = "Unknown-User"
 
 def save_log(user_name, status):
     with open("logs/login_history.txt", "a") as file:
@@ -34,9 +34,9 @@ def save_log(user_name, status):
         file.write(f"[{current_time}] User: {user_name} | status: {status}\n")
 
 while True:
-    print("\n " * 50)
+    print("\n " * 90)
     print("//====================================--")
-    print("||   MAIN SYSTEM MENU MAIN OPTION..   =")
+    print("||   PTMENU ----  MAIN OPTION..   =")
     print("//====================================---..")
     print("LOGIN [1]")
     print("EXIT NOW [E]")
@@ -91,7 +91,7 @@ def check_system():
     print("=" * 30)
     print(f"CPU USAGE: {c} %")
     print(f" RAM : {mu:.2f} / {mt:.2f} GB")
-    print(f"DSSK FREE : {DF:.2f} GB")
+    print(f"DISK FREE : {DF:.2f} GB")
     print("=" * 30)
 
     usedcclt(name, "JUST CHECK COMPUTER")
@@ -167,7 +167,7 @@ def cclt():
     time.sleep(2)
 
 def v():
-    print("\n " * 50)
+    print("\n " * 90)
 
 def wdiary(wwwftxtDI):
     with open("txt/DIARY-user.txt", "a") as file:
@@ -177,10 +177,27 @@ def wwork(wwwftxtW):
     with open("txt/WORKS-list.txt", "a") as file:
         file.write(f"{wwwftxtW}\n")
 
+RED = "\033[31m"
+GREEN = "\033[32m"
+YELLOW = "\033[33m"
+BLUE = "\033[34m"
+DE = "\033[0m"
+
 while True:
-    print("\n " * 50)
+    print("\n " * 90)
+    print(f"{BLUE}nnnnnnnnnnn        ttt")
+    print(f"{BLUE}nnnnnnnnnnnnn      ttt")
+    print(f"{GREEN}nnn       nnn      ttt")
+    print(f"{GREEN}nnn      nnnn   ttttttttt")
+    print(f"{GREEN}nnnnnnnnnnn     ttttttttt")
+    print(f"{YELLOW}nnnnnnnnnn         ttt")
+    print(f"{YELLOW}nnn                ttt")
+    print(f"{YELLOW}nnn                ttt    tttt")
+    print(f"{YELLOW}nnn                tttt    ttt")
+    print(f"{RED}nnn                 tttt  tttt")
+    print(f"{RED}nnn        {DE}MENU{RED}      tttttttt{DE}")
     print(" ====================================")
-    print(f"=- MAIN SYSTEM FOR RHEL[{Version}] -=")
+    print(f"=- WELCOME TO PTMENU [{Version}] -=")
     print(" ====================================")
     print("1. check_system")
     print("2. calculator")
@@ -222,7 +239,7 @@ while True:
             if wwtxt == "1":
                 DIARYW = input("WRITE HERE >> ")
                 wdiary(DIARYW)
-                usedcclt(name, "JUST WRITE DIRAY")
+                usedcclt(name, "JUST WRITE DIARY")
                 print("AGAIN? [Y/n]")
                 ynn = input("SELECT :  ")
                 if ynn.upper() == "Y":
@@ -261,3 +278,4 @@ while True:
     elif cho == "6":
         v()
         exit()
+
