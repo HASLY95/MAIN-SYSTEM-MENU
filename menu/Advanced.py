@@ -11,7 +11,7 @@ import requests
 import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-Version = "BETA : v.2.4.2"
+Version = "BETA : v.2.4.3"
 
 import socket
 import time
